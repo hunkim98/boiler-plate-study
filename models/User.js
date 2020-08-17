@@ -12,10 +12,10 @@ const userSchema = mongoose.Schema({
   },
   password: {
     type: String,
-    maxlength: 5,
+    minlength: 5,
   },
   role: {
-    type: Number, //1이면 관리자, 0이면 client
+    type: Number, //1이면 관리자, 0이면 client - 이것은 나중에 설정할 것
     default: 0, //role을 정하지 않으면 default role
   },
   image: String,
